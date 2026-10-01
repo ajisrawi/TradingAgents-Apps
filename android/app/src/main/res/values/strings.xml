@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TradingAgents</string>
+    <string name="starting">Starting the analysis engine…\nThe first start takes a little longer.</string>
+    <string name="start_failed">The analysis engine could not start.\n\n%1$s</string>
+    <string name="retry">Try again</string>
+    <string name="channel_name">Analysis runs</string>
+    <string name="run_in_progress">An analysis is running</string>
+    <string name="run_finished">The analysis has ended. Tap to see the result.</string>
+</resources>

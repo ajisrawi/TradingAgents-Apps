@@ -1,0 +1,90 @@
+# Everything the engine imports on Android, pinned, and installed with --no-deps
+# (see app/build.gradle.kts) so that exactly this set goes into the APK.
+#
+# It is the TradingAgents dependency tree as resolved on the PC, minus the CLI's
+# terminal UI, with the compiled packages set to the versions that have Android
+# builds. Those come from PyPI where it has them and otherwise from Flet's
+# mobile package index (https://pypi.flet.dev). After a framework update,
+# re-check this list against the framework's pyproject.toml.
+
+# --- Compiled, from pypi.flet.dev -------------------------------------------
+numpy==2.4.6
+pandas==3.0.3
+pydantic-core==2.46.4
+jiter==0.15.0
+orjson==3.11.9
+ormsgpack==1.12.2
+tiktoken==0.13.0
+uuid-utils==0.17.0
+cffi==2.0.0
+cryptography==43.0.1
+lxml==6.1.1
+regex==2026.5.9
+zstandard==0.25.0
+pyyaml==6.0.3
+curl-cffi==0.16.2
+
+# --- Compiled, from PyPI ----------------------------------------------------
+xxhash==4.0.1
+
+# --- Pure Python ------------------------------------------------------------
+# pydantic pins its core exactly: 2.13.4 is the release built on core 2.46.4.
+pydantic==2.13.4
+aiosqlite==0.22.1
+annotated-types==0.8.0
+anthropic==1.11.0
+anyio==4.15.1
+beautifulsoup4==4.15.0
+certifi==2026.7.22
+charset-normalizer==3.5.2
+distro==1.9.0
+docstring-parser==0.18.0
+filetype==1.2.0
+google-auth==2.59.1
+google-genai==2.26.0
+h11==0.16.0
+httpcore==1.0.9
+httpcore2==2.13.1
+httpx==0.28.1
+httpx2==2.13.1
+idna==3.20
+jsonpatch==1.33
+jsonpointer==3.1.1
+langchain-anthropic==1.7.5
+langchain-core==1.6.6
+langchain-google-genai==4.4.0
+langchain-openai==1.6.7
+langchain-protocol==0.0.19
+langgraph==1.2.12
+langgraph-checkpoint==4.2.0
+# Its sqlite-vec dependency (vector search, unused here) has no Android build.
+langgraph-checkpoint-sqlite==3.1.1
+langgraph-prebuilt==1.1.0
+langgraph-sdk==0.4.5
+langsmith==0.14.2
+multitasking==0.0.13
+openai==3.22.1
+packaging==26.3
+peewee==4.5.2
+platformdirs==4.12.2
+protobuf==7.36.2
+pyasn1==0.6.4
+pyasn1-modules==0.4.2
+pycparser==3.0
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.4
+pytz==2026.4
+requests==2.34.2
+requests-toolbelt==1.0.0
+six==1.17.0
+sniffio==1.3.1
+soupsieve==2.10
+stockstats==0.6.9
+tenacity==9.1.4
+truststore==0.10.4
+typing-extensions==4.16.0
+typing-inspection==0.4.4
+tzdata==2026.4
+urllib3==2.8.0
+websockets==16.1.1
+yfinance==1.7.0

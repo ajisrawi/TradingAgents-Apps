@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.log
+
+# Windows build output
+app/build/
+app/dist/
+
+# Android build output and machine-specific files
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/local.properties
+android/*.apk

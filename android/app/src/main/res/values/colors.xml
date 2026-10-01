@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The palettes of the web UI (web/app.css): dark, then light. -->
+    <color name="background">#0C1118</color>
+    <color name="text">#E6EBF2</color>
+    <color name="muted">#93A1B5</color>
+    <color name="background_light">#F3F5F8</color>
+    <color name="text_light">#17202C</color>
+    <color name="muted_light">#5D6B7E</color>
+    <color name="accent">#34D399</color>
+    <color name="icon_background">#0F1826</color>
+</resources>

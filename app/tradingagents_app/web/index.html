@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <title>TradingAgents</title>
+  <link rel="icon" href="/icon.svg">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/new"><img src="/icon.svg" alt="">TradingAgents</a>
+    <nav id="nav">
+      <a href="#/new" data-route="new">New analysis</a>
+      <a href="#/run" data-route="run">Live run<span id="nav-live" class="live-dot" hidden></span></a>
+      <a href="#/history" data-route="history">History</a>
+      <a href="#/settings" data-route="settings">Settings</a>
+    </nav>
+  </header>
+  <main id="view"><p class="loading">Starting the engine…</p></main>
+  <script src="/vendor/marked.umd.js"></script>
+  <script src="/vendor/purify.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
